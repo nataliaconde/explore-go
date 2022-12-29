@@ -6,7 +6,7 @@ RUN apk add --no-cache git
 
 WORKDIR /go/src/app
 
-COPY . /go/src/app
+COPY . /go/src/app/
 
 RUN go get && go install && go build
 
