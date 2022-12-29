@@ -8,6 +8,10 @@ WORKDIR /go/src/app
 
 COPY . /go/src/app/
 
-RUN go get && go install && go build
+RUN go get 
+
+RUN go install 
+
+RUN go build
 
 CMD ["./explore-go"]
